@@ -72,3 +72,8 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+
+function confirme() {
+  document.getElementsByClassName("tab")[currentTab].className += "congratilation";
+  alert("payment conferm")
+}
