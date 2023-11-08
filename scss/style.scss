@@ -47,12 +47,14 @@ body {
     justify-content: space-between;
 }
 
+
 .btn {
     cursor: pointer;
     border: none;
     font-weight: 700;
     border-radius: 10px;   
     font-size: 110%;
+    
 }
 
 .btn-blue {
@@ -64,7 +66,6 @@ body {
 .btn-gray {
     color: $Cool-gray;
     background: none;
-    justify-self: flex-start !important;
 }
 
 .check {
@@ -85,10 +86,12 @@ body {
 
 
 .tab {
-    // height: 450px;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    height: 502px;
     width: 480px;
-    display: flex;
-    flex-direction: column;
     padding: 2rem 4.5rem;
     display: none;
    label {
@@ -113,22 +116,7 @@ body {
    }
 }  
 
-
-  /* Make circles that indicate the steps of the form: */
-.number {
-    // height: 15px;
-    // width: 15px;
-    // margin: 0 2px;
-    // background-color: #bbbbbb;
-    // border: none;
-    // border-radius: 50%;
-    // display: inline-block;
-    opacity: 0.5;
-  }
-  
-  /* Mark the active step: */
- 
-    
+  /* Mark the active step: */   
   .number.active {
     background: $Light;
     color: $Marine-blue;
@@ -137,14 +125,15 @@ body {
   
   
   /* Mark the steps that are finished and valid: */
-//   .step.finish {
-//     // background-color: #04AA6D;
-//   }
+  .step.finish {
+    opacity: .5;
+  }
 
   .container {
     display: flex;
+    position: relative;
     height: 541px;
-    width: 725  px;
+    width: 725px;
     background-color: $White;
     padding: 1rem;
     border-radius: 10px; 
@@ -246,5 +235,17 @@ body {
         color: $Purplish-blue;
         font-weight: 700;
         font-size: 150%;
+    }
+}
+
+.thanks {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        margin: 1.8rem;
     }
 }

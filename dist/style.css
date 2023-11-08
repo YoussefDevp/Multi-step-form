@@ -262,7 +262,6 @@ body {
 .btn-gray {
   color: hsl(231, 11%, 63%);
   background: none;
-  justify-self: flex-start !important;
 }
 
 .check {
@@ -282,9 +281,9 @@ body {
 }
 
 .tab {
+  position: relative;
+  height: 502px;
   width: 480px;
-  display: flex;
-  flex-direction: column;
   padding: 2rem 4.5rem;
   display: none;
 }
@@ -302,18 +301,9 @@ body {
   border-radius: 5px;
   border: solid 1px hsl(229, 24%, 87%);
 }
-.tab input::-moz-placeholder {
-  color: hsl(231, 11%, 63%);
-  font-weight: 700;
-}
 .tab input::placeholder {
   color: hsl(231, 11%, 63%);
   font-weight: 700;
-}
-
-/* Make circles that indicate the steps of the form: */
-.number {
-  opacity: 0.5;
 }
 
 /* Mark the active step: */
@@ -324,10 +314,15 @@ body {
 }
 
 /* Mark the steps that are finished and valid: */
+.step.finish {
+  opacity: 0.5;
+}
+
 .container {
   display: flex;
+  position: relative;
   height: 541px;
-  width: 725 px;
+  width: 725px;
   background-color: hsl(0, 0%, 100%);
   padding: 1rem;
   border-radius: 10px;
@@ -427,4 +422,16 @@ body {
   color: hsl(243, 100%, 62%);
   font-weight: 700;
   font-size: 150%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.thanks {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.thanks h1 {
+  margin: 1.8rem;
+}

@@ -13,6 +13,7 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
+
   } else {
     document.getElementById("nextBtn").innerHTML = "Next Step";
     document.getElementById("prevBtn").style.display = "none";
@@ -74,6 +75,7 @@ function fixStepIndicator(n) {
 }
 
 function confirme() {
-  document.getElementsByClassName("tab")[currentTab].className += "congratilation";
+  document.getElementsByClassName("tab")[currentTab].className += " congratilation";
+  
   alert("payment conferm")
 }

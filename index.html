@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="container">
+  <!-- STEPS -->
   <div id="steps">
     <div class="step">
       <span class="number">1</span>
@@ -39,12 +40,8 @@
     </div>
     </div>   
     
-    
-
     <form id="regForm" class="form" action="">
-
       <!-- TAB 1 -->
-
          <div class="tab">
           <h1 class="heading"> Personal info</h1>
           <p class="paragraph">Please provide your name, email address, and phone number.</p>
@@ -65,10 +62,7 @@
             <button class="btn btn-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next Step</button>
         </div>
           </div> 
-        
-
-  <!-- TAB 2         -->
-        
+  <!-- TAB 2         -->      
         <div class="tab">
           <h1 class="heading">Select your plan</h1>
           <p class="paragraph"> You have the option of monthly or yearly billing.</p>    
@@ -89,19 +83,15 @@
              <p>$9/mo</p>
             </div>
           </div>     
-
           <div class="check checkbox-wrapper-14">
             Monthly <input id="s1-14" type="checkbox" class="switch"> Yearly
           </div>
-
           <div class="buttondiv">                 
               <button class="btn btn-gray" type="button" id="prevBtn" onclick="nextPrev(-1)">Go Back</button>
               <button class="btn btn-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next Step</button>
             </div>         
         </div>
-
 <!-- TAB 3       -->
-
         <div class="tab">
           <h1 class="heading">Select your plan</h1>
           <p class="paragraph"> You have the option of monthly or yearly billing.</p>    
@@ -141,16 +131,11 @@
                   +1$/mo
                  </span>
               </div>
-
-
-          <div class="buttondiv">     
-            
+          <div class="buttondiv">           
               <button class="btn btn-gray" type="button" id="prevBtn" onclick="nextPrev(-1)">Go Back</button>
               <button class="btn btn-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next Step</button>
-            </div>
-           
+            </div>           
         </div>
-
         <!-- TAB 4 -->
         <div class="tab">
           <h1 class="heading">Select your plan</h1>
@@ -158,11 +143,9 @@
           <div class="wrap">
            <div class="end">
             <div class="price">
-              <h3> Arcade (Monthly)</h3> <span class="change">Change</span>
-            
+              <h3> Arcade (Monthly)</h3> <span class="change">Change</span>           
             </div>
-            <h3>$9/mo</h3>
-            
+            <h3>$9/mo</h3>         
            </div>
            <hr>
            <div class="add">
@@ -170,37 +153,29 @@
             <span>online service</span>
           </div>
         </div>
-
         <div class="total">
           <span>
             total (per month) 
           </span>
           <p>+12/mo</p>
         </div>
-
           <div class="buttondiv">     
-            
               <button class="btn btn-gray" type="button" id="prevBtn" onclick="nextPrev(-1)">Go Back</button>
-              <button class="btn btn-blue" type="button" onclick="confirme()">Confirm</button>
-            
-            </div>
-           
+              <button class="btn btn-blue" type="button"    onclick="nextPrev(1)">Confirm</button>
+            </div>   
         </div>
-        
-        <!-- <div class="tab">Birthday:
-          <p><input placeholder="dd" oninput="this.className = ''"></p>
-          <p><input placeholder="mm" oninput="this.className = ''"></p>
-          <p><input placeholder="yyyy" oninput="this.className = ''"></p>
-        </div>
-        
-        <div class="tab">Login Info:
-          <p><input placeholder="Username..." oninput="this.className = ''"></p>
-          <p><input placeholder="Password..." oninput="this.className = ''"></p>
-        </div> -->
-        
+
+        <!-- TAB 5 -->      
+        <div class="tab">
+          <div class="thanks">
+            <img src="./images/icon-thank-you.svg" alt="">
+            <h1 class="heading">Thank you!</h1>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatum perspiciatis accusantium soluta accusamus nisi.</p>
+          </div>
+          </div>
       
         </form>
       </div>
-        <script src="./script.js"></script>
 </body>
+<script src="./script.js"></script>
 </html>
