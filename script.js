@@ -90,6 +90,7 @@ document.getElementById('regForm').addEventListener('submit', function(event) {
   const nameValue = document.getElementById('Name').value.trim();
   const emailValue = document.getElementById('Email').value.trim();
   const phoneValue = document.getElementById('Phone').value.trim();
+
   const nameborder = document.getElementById('Name')
   const emailborder = document.getElementById('Email')
   const phoneborder = document.getElementById('Phone')
@@ -123,18 +124,42 @@ document.getElementById('regForm').addEventListener('submit', function(event) {
 
 
 // Get the checkbox and price elements
-const checkbox = document.getElementById('s1-14');
-const prices = document.querySelectorAll('.price');
+// const checkbox = document.getElementById('s1-14');
+// const prices = document.querySelectorAll('.price');
 
-// Add an event listener to the checkbox
-checkbox.addEventListener('change', function() {
-  prices.forEach(price => {
+// // Add an event listener to the checkbox
+// checkbox.addEventListener('change', function() {
+//   prices.forEach(price => {
+//     if (checkbox.checked) {
+//       // Switch to yearly pricing
+//       price.textContent = `$${price.dataset.yearly}/yr`;
+//     } else {
+//       // Switch back to monthly pricing
+//       price.textContent = `$${price.dataset.monthly}/mo`;
+//     }
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const checkbox = document.getElementById("s1-14");
+  const monthlyPrices = document.querySelectorAll(".price.monthly");
+  const yearlyPrices = document.querySelectorAll(".price.yearly");
+
+  checkbox.addEventListener("change", function() {
     if (checkbox.checked) {
-      // Switch to yearly pricing
-      price.textContent = `$${price.dataset.yearly}/yr`;
+      monthlyPrices.forEach(price => {
+        price.style.display = "none";
+      });
+      yearlyPrices.forEach(price => {
+        price.style.display = "block";
+      });
     } else {
-      // Switch back to monthly pricing
-      price.textContent = `$${price.dataset.monthly}/mo`;
+      monthlyPrices.forEach(price => {
+        price.style.display = "block";
+      });
+      yearlyPrices.forEach(price => {
+        price.style.display = "none";
+      });
     }
   });
 });

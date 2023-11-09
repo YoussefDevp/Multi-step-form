@@ -71,23 +71,26 @@
           <p class="paragraph"> You have the option of monthly or yearly billing.</p>    
           <div class="cards">
             <div class="card">
-              <img src="./images/icon-arcade.svg" alt="" srcset="">
-             <span class="card-title">Arcade</span>
-             <p class="price" data-monthly="9" data-yearly="90">$9/mo</p>
-            </div>
+              <img src="./images/icon-arcade.svg" alt="Arcade Plan Icon">
+              <span class="card-title">Arcade</span>
+              <p class="price monthly"> $9/mo </p>
+              <p class="price yearly" style="display: none;"> $90/yr <span class="free-months"> 2 months free </span></p>
+              </div>
             <div class="card">
               <img src="./images/icon-advanced.svg" alt="" srcset="">
              <span class="card-title">Advanced</span>
-             <p class="price" data-monthly="9" data-yearly="120">$9/mo</p>
+             <p class="price monthly">$12/mo</p>
+             <p class="price yearly" style="display: none;"> $120/yr <span class="free-months"> 2 months free </span></p>
             </div>
             <div class="card">
               <img src="./images/icon-pro.svg" alt="" srcset="">
              <span class="card-title">Pro</span>
-             <p class="price" data-monthly="9" data-yearly="15">$9/mo</p>
+             <p class="price monthly">$15/mo</p>
+             <p class="price yearly" style="display: none;"> $150/yr <span class="free-months"> 2 months free </span></p>
             </div>
           </div>     
           <div class="check checkbox-wrapper-14">
-            Monthly <input id="s1-14" type="checkbox" class="switch"> Yearly
+            Monthly <input id="s1-14" class="switch" type="checkbox" class="switch"> Yearly
           </div>
           <div class="buttondiv">                 
               <button class="btn btn-gray" type="button" id="prevBtn" onclick="nextPrev(-1)">Go Back</button>
