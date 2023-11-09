@@ -1,0 +1,41 @@
+@media only screen and (max-width: 765px) {
+
+    body {
+        height: 100%;
+    }
+    .container {
+        position: relative;
+        padding: 0;
+        flex-direction: column;
+        #steps {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            border-radius:0;
+            background: url('../images/bg-sidebar-mobile.svg') center center / cover;
+            .step h3 , p {
+                display: none;
+            }
+        }
+        #regForm {
+            position: absolute;
+            top: 280%;
+            right: -220px;
+            transform: translate(-50%, -50%);
+            background: hsl(0, 0%, 100%);
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+        }
+    }
+
+    .buttondiv {
+        position: absolute;
+        bottom: -110px;
+        right: 0px;
+        width: 100%;
+        background: hsl(0, 0%, 100%);
+        padding: 1rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    }
+  }

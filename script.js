@@ -5,7 +5,7 @@ function showTab(n) {
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
   var btn = document.getElementsByClassName("buttondiv");
-  x[n].style.display = "block";
+  x[n].style.display = "flex";
   // ... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
@@ -184,10 +184,9 @@ for(let item of checkboxes) {
   item.addEventListener("change", function(){
     console.log(this, this.checked, this.parentElement.parentElement)
     if(this.checked) {
-      this.parentElement.parentElement.style.border = "2px solid green"
+      this.parentElement.parentElement.style.border = "2px solid hsl(243, 100%, 62%)"
     } else {
-      this.parentElement.parentElement.style.border = "1px solid black"
-
+      this.parentElement.parentElement.style.border = "1px solid hsl(231, 11%, 63%);"
     }
   })
 }
