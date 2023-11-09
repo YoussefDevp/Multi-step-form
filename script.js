@@ -170,11 +170,24 @@ document.addEventListener("DOMContentLoaded", function() {
   const checkbox = document.getElementById("c1-13");
   const addOnsDiv = document.querySelector(".add-ons");
 
-  checkbox.addEventListener("change", function() {
+  /*checkbox.addEventListener("change", function() {
     if (checkbox.checked) {
       addOnsDiv.style.border = "2px solid green"; // Change the border color to green when checked
     } else {
       addOnsDiv.style.border = "1px solid black"; // Reset border color when unchecked
     }
-  });
+  });*/
+
 });
+const checkboxes = document.querySelectorAll(".checkbox-wrapper-13 input")
+for(let item of checkboxes) {
+  item.addEventListener("change", function(){
+    console.log(this, this.checked, this.parentElement.parentElement)
+    if(this.checked) {
+      this.parentElement.parentElement.style.border = "2px solid green"
+    } else {
+      this.parentElement.parentElement.style.border = "1px solid black"
+
+    }
+  })
+}
