@@ -163,3 +163,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const checkbox = document.getElementById("c1-13");
+  const addOnsDiv = document.querySelector(".add-ons");
+
+  checkbox.addEventListener("change", function() {
+    if (checkbox.checked) {
+      addOnsDiv.style.border = "2px solid green"; // Change the border color to green when checked
+    } else {
+      addOnsDiv.style.border = "1px solid black"; // Reset border color when unchecked
+    }
+  });
+});

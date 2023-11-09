@@ -37,6 +37,9 @@
     --d-t: .6s;
     --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
   }
+  .checkbox-wrapper-14 input[type=checkbox]:checked .add-ons {
+    border: solid 2px #275EFE;
+  }
   .checkbox-wrapper-14 input[type=checkbox]:disabled {
     --b: var(--disabled);
     cursor: not-allowed;
