@@ -42,6 +42,14 @@ body {
     margin-bottom: 2rem;
 }
 
+.error {
+    display: none;
+    font-size: 70%;
+    color: $Strawberry;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
 .buttondiv {
     display: flex;
     justify-content: space-between;
@@ -66,6 +74,9 @@ body {
 .btn-gray {
     color: $Cool-gray;
     background: none;
+    &:hover {
+        color: $Marine-blue;
+    }
 }
 
 .check {
@@ -92,7 +103,7 @@ body {
     // justify-content: space-between;
     height: 502px;
     width: 480px;
-    padding: 2rem 4.5rem;
+    padding: 2rem;
     display: none;
    label {
     color: $Marine-blue;
@@ -106,7 +117,6 @@ body {
 
    input {
     padding: .8rem .4rem;
-    margin-bottom: 1rem;
     border-radius: 5px;
    border: solid 1px $Light-gray;
     &::placeholder {
@@ -209,11 +219,15 @@ body {
 .add-ons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 1rem;
     border: solid 1px $Light-gray;
     border-radius: 10px;
     margin-bottom: 1rem;
+
+    p {
+        font-size: 80%;
+        margin-right: 1rem;
+    }
 }
 .end {
     display: flex;
@@ -241,6 +255,8 @@ body {
 }
 
 .thanks {
+    width: 100%;
+    padding: 2rem;
     margin: 0;
     position: absolute;
     top: 50%;

@@ -47,19 +47,22 @@
           <p class="paragraph">Please provide your name, email address, and phone number.</p>
           <div class="input">
             <label for="Name">Name</label>
-          <input type="text" placeholder="e.g.Stephen King">
+          <input type="text" id="Name" placeholder="e.g.Stephen King">
+          <span class="error" id="nameError">This field is required</span>
           </div>    
           <div class="input">
             <label for="Email">Email Address</label>
-          <input type="email" name="email" id="email" placeholder=" e.g. stephenking@lorem.com">
+          <input type="email" name="email" id="Email" placeholder=" e.g. stephenking@lorem.com">
+          <span class="error" id="emailError">This field is required</span>
           </div>
           <div class="input">
             <label for="Phone">Phone Number</label>
-          <input type="tel" placeholder="e.g. +1 234 567 890">    
+          <input type="tel" id="Phone" placeholder="e.g. +1 234 567 890"> 
+          <span class="error" id="phoneError">This field is required</span>   
         </div>
         <div class="buttondiv">     
             <button class="btn btn-gray" type="button" id="prevBtn" onclick="nextPrev(-1)">Go Back</button>
-            <button class="btn btn-blue" type="button" id="nextBtn" onclick="nextPrev(1)">Next Step</button>
+            <button class="btn btn-blue" type="submit" id="nextBtn" onclick="nextPrev(1)">Next Step</button>
         </div>
           </div> 
   <!-- TAB 2         -->      
@@ -70,17 +73,17 @@
             <div class="card">
               <img src="./images/icon-arcade.svg" alt="" srcset="">
              <span class="card-title">Arcade</span>
-             <p>$9/mo</p>
+             <p class="price" data-monthly="9" data-yearly="90">$9/mo</p>
             </div>
             <div class="card">
               <img src="./images/icon-advanced.svg" alt="" srcset="">
              <span class="card-title">Advanced</span>
-             <p>$9/mo</p>
+             <p class="price" data-monthly="9" data-yearly="120">$9/mo</p>
             </div>
             <div class="card">
               <img src="./images/icon-pro.svg" alt="" srcset="">
              <span class="card-title">Pro</span>
-             <p>$9/mo</p>
+             <p class="price" data-monthly="9" data-yearly="15">$9/mo</p>
             </div>
           </div>     
           <div class="check checkbox-wrapper-14">
@@ -93,15 +96,15 @@
         </div>
 <!-- TAB 3       -->
         <div class="tab">
-          <h1 class="heading">Select your plan</h1>
-          <p class="paragraph"> You have the option of monthly or yearly billing.</p>    
+          <h1 class="heading">SPick add-ons</h1>
+          <p class="paragraph"> YAdd-ons help enhance your gaming experience.</p>    
               <div class="add-ons">
                 <div class="checkbox-wrapper-13">
                   <input id="c1-13" type="checkbox">
                 </div>
                 <label for="c1-13">
                   <h3>Online service</h3>
-                  <p>Lorem, ipsum dolor.</p>
+                  <p>Access to multiplayer games</p>
                  </label>
                  <span>
                   +1$/mo
@@ -112,11 +115,11 @@
                   <input id="c1-13" type="checkbox">
                 </div>
                 <label for="c1-13">
-                  <h3>Online service</h3>
-                  <p>Lorem, ipsum dolor.</p>
+                  <h3>Larger storage</h3>
+                  <p>Extra 1TB of cloud save.</p>
                  </label>
                  <span>
-                  +1$/mo
+                  +2$/mo
                  </span>
               </div>
               <div class="add-ons">
@@ -124,11 +127,11 @@
                   <input id="c1-13" type="checkbox">
                 </div>
                 <label for="c1-13">
-                  <h3>Online service</h3>
-                  <p>Lorem, ipsum dolor.</p>
+                  <h3>Customizable Profile</h3>
+                  <p>Custom theme on your profile.</p>
                  </label>
                  <span>
-                  +1$/mo
+                  +2$/mo
                  </span>
               </div>
           <div class="buttondiv">           
@@ -138,8 +141,8 @@
         </div>
         <!-- TAB 4 -->
         <div class="tab">
-          <h1 class="heading">Select your plan</h1>
-          <p class="paragraph"> You have the option of monthly or yearly billing.</p>   
+          <h1 class="heading">Finishing up</h1>
+          <p class="paragraph"> Double-check everything looks OK before confirming.</p>   
           <div class="wrap">
            <div class="end">
             <div class="price">
@@ -170,10 +173,11 @@
           <div class="thanks">
             <img src="./images/icon-thank-you.svg" alt="">
             <h1 class="heading">Thank you!</h1>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatum perspiciatis accusantium soluta accusamus nisi.</p>
+            <p class="paragraph">Thanks for confirming your subscription! We hope you have fun 
+              using our platform. If you ever need support, please feel free 
+              to email us at support@loremgaming.com.</p>
           </div>
-          </div>
-      
+          </div>      
         </form>
       </div>
 </body>

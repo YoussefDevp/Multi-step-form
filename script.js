@@ -79,3 +79,62 @@ function confirme() {
   
   alert("payment conferm")
 }
+
+
+
+
+document.getElementById('regForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevents the form from submitting by default
+  
+  // Check each input field and display error messages if empty
+  const nameValue = document.getElementById('Name').value.trim();
+  const emailValue = document.getElementById('Email').value.trim();
+  const phoneValue = document.getElementById('Phone').value.trim();
+  const nameborder = document.getElementById('Name')
+  const emailborder = document.getElementById('Email')
+  const phoneborder = document.getElementById('Phone')
+
+  const nameError = document.getElementById('nameError');
+  const emailError = document.getElementById('emailError');
+  const phoneError = document.getElementById('phoneError');
+
+  if (nameValue === '') {
+    nameError.style.display = 'block';
+    nameborder.style.border =" solid 1px red"
+  } else {
+    nameError.style.display = 'none';
+    
+  }
+
+  if (emailValue === '') {
+    emailError.style.display = 'block';
+    emailborder.style.border = "solid 1px red"
+  } else {
+    emailError.style.display = 'none';
+  }
+
+  if (phoneValue === '') {
+    phoneError.style.display = 'block';
+    phoneborder.style.border = "solid 1px red"
+  } else {
+    phoneError.style.display = 'none';
+  }
+});
+
+
+// Get the checkbox and price elements
+const checkbox = document.getElementById('s1-14');
+const prices = document.querySelectorAll('.price');
+
+// Add an event listener to the checkbox
+checkbox.addEventListener('change', function() {
+  prices.forEach(price => {
+    if (checkbox.checked) {
+      // Switch to yearly pricing
+      price.textContent = `$${price.dataset.yearly}/yr`;
+    } else {
+      // Switch back to monthly pricing
+      price.textContent = `$${price.dataset.monthly}/mo`;
+    }
+  });
+});
