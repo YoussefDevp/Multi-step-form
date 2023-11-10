@@ -7,6 +7,7 @@
         position: relative;
         padding: 0;
         flex-direction: column;
+        height: 100vh;
         #steps {
             display: flex;
             align-items: center;
@@ -20,18 +21,24 @@
         }
         #regForm {
             position: absolute;
-            top: 280%;
-            right: -220px;
-            transform: translate(-50%, -50%);
+            margin: 0 1rem;
+            width:calc(100% - 2rem);
+            top: 40%;
+            transform: translateY(-50%);
             background: hsl(0, 0%, 100%);
             border-radius: 15px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            .tab {
+                width: 90%;
+
+            }
         }
     }
 
     .buttondiv {
         position: absolute;
-        bottom: -110px;
+        bottom: -258px;
+        margin: 0;
         right: 0px;
         width: 100%;
         background: hsl(0, 0%, 100%);

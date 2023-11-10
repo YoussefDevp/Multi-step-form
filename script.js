@@ -74,12 +74,6 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-function confirme() {
-  document.getElementsByClassName("tab")[currentTab].className += " congratilation";
-  
-  alert("payment conferm")
-}
-
 
 
 
@@ -123,22 +117,6 @@ document.getElementById('regForm').addEventListener('submit', function(event) {
 });
 
 
-// Get the checkbox and price elements
-// const checkbox = document.getElementById('s1-14');
-// const prices = document.querySelectorAll('.price');
-
-// // Add an event listener to the checkbox
-// checkbox.addEventListener('change', function() {
-//   prices.forEach(price => {
-//     if (checkbox.checked) {
-//       // Switch to yearly pricing
-//       price.textContent = `$${price.dataset.yearly}/yr`;
-//     } else {
-//       // Switch back to monthly pricing
-//       price.textContent = `$${price.dataset.monthly}/mo`;
-//     }
-//   });
-// });
 
 document.addEventListener("DOMContentLoaded", function() {
   const checkbox = document.getElementById("s1-14");
@@ -166,19 +144,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const checkbox = document.getElementById("c1-13");
-  const addOnsDiv = document.querySelector(".add-ons");
-
-  /*checkbox.addEventListener("change", function() {
-    if (checkbox.checked) {
-      addOnsDiv.style.border = "2px solid green"; // Change the border color to green when checked
-    } else {
-      addOnsDiv.style.border = "1px solid black"; // Reset border color when unchecked
-    }
-  });*/
-
-});
 const checkboxes = document.querySelectorAll(".checkbox-wrapper-13 input")
 for(let item of checkboxes) {
   item.addEventListener("change", function(){

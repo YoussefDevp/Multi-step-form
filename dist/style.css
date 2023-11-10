@@ -264,6 +264,19 @@ body {
   font-size: 110%;
 }
 
+.free-months {
+  display: block;
+  font-size: 70%;
+  color: hsl(243, 100%, 62%);
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.change {
+  text-decoration: underline;
+  margin: 0.3rem;
+}
+
 .btn-blue {
   padding: 0.8rem 1.6rem;
   color: hsl(217, 100%, 97%);
@@ -316,6 +329,10 @@ body {
   border-radius: 5px;
   border: solid 1px hsl(229, 24%, 87%);
 }
+.tab input::-moz-placeholder {
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+}
 .tab input::placeholder {
   color: hsl(231, 11%, 63%);
   font-weight: 700;
@@ -355,11 +372,16 @@ body {
 }
 .step span {
   font-size: 80%;
-  border-radius: 1000%;
+  border-radius: 9999px;
   border: solid 1px hsl(0, 0%, 100%);
-  padding: 0.6rem;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  aspect-ratio: 1/1;
   color: hsl(0, 0%, 100%);
-  margin-right: 0.8rem;
+  margin-right: 0.6rem;
   transition: all 300ms ease-in-out;
 }
 .step span:hover {
@@ -463,6 +485,7 @@ body {
     position: relative;
     padding: 0;
     flex-direction: column;
+    height: 100vh;
   }
   .container #steps {
     display: flex;
@@ -477,20 +500,25 @@ body {
   }
   .container #regForm {
     position: absolute;
-    top: 280%;
-    right: -220px;
-    transform: translate(-50%, -50%);
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+    top: 40%;
+    transform: translateY(-50%);
     background: hsl(0, 0%, 100%);
     border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
+  .container #regForm .tab {
+    width: 90%;
+  }
   .buttondiv {
     position: absolute;
-    bottom: -110px;
+    bottom: -258px;
+    margin: 0;
     right: 0px;
     width: 100%;
     background: hsl(0, 0%, 100%);
     padding: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
