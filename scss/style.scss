@@ -49,11 +49,16 @@ body {
     color: $Strawberry;
     font-weight: 700;
     margin: .5rem 0;
+    align-self: flex-end;
 }
 
 .buttondiv {
     display: flex;
     justify-content: space-between;
+}
+
+.j-flex-end {
+    justify-content: flex-end;
 }
 
 

@@ -249,11 +249,16 @@ body {
   color: hsl(354, 84%, 57%);
   font-weight: 700;
   margin: 0.5rem 0;
+  align-self: flex-end;
 }
 
 .buttondiv {
   display: flex;
   justify-content: space-between;
+}
+
+.j-flex-end {
+  justify-content: flex-end;
 }
 
 .btn {
